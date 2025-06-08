@@ -433,7 +433,3 @@ class: text-center
 
 </div>
 </GlowBackground>
-
----
-
-<small>© Cursor Community</small>
