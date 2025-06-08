@@ -11,6 +11,7 @@
     "@slidev/cli": "^51.7.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "lucide-react": "^0.513.0",
     "slidev-theme-cursor": "link:slidev-theme-cursor",
     "vue": "^3.5.14"
   },

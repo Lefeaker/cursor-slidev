@@ -1,57 +1,57 @@
-# Cursor Slidev Kit
+# Cursor Slidev 工具包
 
-This repository provides a template for Cursor Ambassadors and Team members to create presentations using Slidev, powered by Cursor.
+这个仓库为 Cursor 大使和团队成员提供了一个使用 Slidev 创建演示文稿的模板，由 Cursor 提供支持。
 
-It includes a custom component, `GlowBackground.vue`, located in the `components/` directory, which adds an animated glowing background effect to your slides. You can see an example of its usage in `slides.md`.
+它包含一个自定义组件 `GlowBackground.vue`，位于 `components/` 目录中，为您的幻灯片添加动画发光背景效果。您可以在 `slides.md` 中看到其使用示例。
 
-## Getting Started
+## 快速开始
 
-To start the slide show locally:
+要在本地启动幻灯片演示：
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+- `pnpm install` - 安装依赖
+- `pnpm dev` - 启动开发服务器
+- 访问 <http://localhost:3030>
 
-Edit the [slides.md](./slides.md) to see the changes.
+编辑 [slides.md](./slides.md) 文件即可看到更改。
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+在 [文档](https://sli.dev/) 中了解更多关于 Slidev 的信息。
 
-## Hosting on GitHub Pages
+## 部署到 GitHub Pages
 
-To deploy your slides to GitHub Pages:
+要将您的幻灯片部署到 GitHub Pages：
 
-1.  **Commit and push all your changes** to the `main` branch (or your desired publishing branch). This includes the workflow file located at `.github/workflows/deploy.yml`.
-2.  **Configure GitHub Pages**:
-    *   Go to your repository's **Settings** tab.
-    *   Navigate to the **Pages** section in the sidebar.
-    *   Under "Build and deployment", select **GitHub Actions** as the **Source**.
-    *   GitHub Actions will automatically detect the `deploy.yml` workflow and build/deploy your slides.
-    *   Once the deployment is complete, your slides will be available at `https://<your-username>.github.io/<your-repository-name>/`.
+1.  **提交并推送所有更改** 到 `main` 分支（或您想要发布的分支）。这包括位于 `.github/workflows/deploy.yml` 的工作流文件。
+2.  **配置 GitHub Pages**：
+    *   转到您仓库的 **Settings**（设置）选项卡。
+    *   在侧边栏中导航到 **Pages**（页面）部分。
+    *   在"Build and deployment"（构建和部署）下，选择 **GitHub Actions** 作为 **Source**（源）。
+    *   GitHub Actions 将自动检测 `deploy.yml` 工作流并构建/部署您的幻灯片。
+    *   部署完成后，您的幻灯片将在 `https://<your-username>.github.io/<your-repository-name>/` 可用。
 
-## Custom Components
+## 自定义组件
 
 ### `GlowBackground.vue`
 
-This component provides an animated, conic-gradient background with a subtle glowing and scaling effect.
+此组件提供带有微妙发光和缩放效果的动画圆锥渐变背景。
 
-**Usage:**
+**使用方法：**
 
-Wrap your slide content with the `<GlowBackground>` tag:
+用 `<GlowBackground>` 标签包装您的幻灯片内容：
 
 ```html
 <GlowBackground>
-  <h1>Your Slide Title</h1>
-  <p>More content here...</p>
+  <h1>您的幻灯片标题</h1>
+  <p>更多内容...</p>
 </GlowBackground>
 ```
 
-Refer to `slides.md` for a practical example and `components/GlowBackground.vue` for the component's source code.
+参考 `slides.md` 获取实际示例，参考 `components/GlowBackground.vue` 获取组件源代码。
 
-## Cursor Rules
+## Cursor 规则
 
-This project includes helpful Cursor Rules to guide you when creating and editing slides:
+此项目包含有用的 Cursor 规则，用于指导您创建和编辑幻灯片：
 
--   **`create-slidev-slides.mdc`**: Provides comprehensive guidelines on how to create slides using Slidev, covering syntax, frontmatter, components, and various features. Refer to this rule for best practices when working with `slides.md`.
--   **`cursor-brand-guidelines.mdc`**: Outlines the monochrome branding guidelines for Cursor, including color palettes, typography, logo usage, and component styling. Ensure your slides adhere to these guidelines to maintain brand consistency.
+-   **`create-slidev-slides.mdc`**：提供关于如何使用 Slidev 创建幻灯片的全面指南，涵盖语法、前置内容、组件和各种功能。在使用 `slides.md` 时，请参考此规则获取最佳实践。
+-   **`cursor-brand-guidelines.mdc`**：概述了 Cursor 的单色品牌指南，包括调色板、排版、标志使用和组件样式。确保您的幻灯片遵循这些指南以保持品牌一致性。
 
-You can find these rules in the `.cursor/rules/` directory of this repository. They are designed to assist the AI in understanding the project structure and conventions.
+您可以在此仓库的 `.cursor/rules/` 目录中找到这些规则。它们旨在帮助 AI 理解项目结构和约定。
