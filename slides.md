@@ -338,7 +338,7 @@ sequenceDiagram
     participant C as ChatBox
     participant CR as Cursor
 
-    U->>C: 引导前端及其细节罗列
+    U->>C: 引导前端组件及其细节罗列
     C->>CR: 输入开始编写代码<br/>包含 功能描述 Props & Events
     CR->>CR: Debug
     U->>CR: 根据数据表结构创建SQL文件
